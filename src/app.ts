@@ -1,7 +1,7 @@
 // src/app.ts
 import express from "express";
 import { PORT } from "./config";
-import { checkDbConnection } from "./config/database";
+// import { checkDbConnection } from "./config/database";
 
 const app = express();
 
@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
 });
 
 // Check database connection
-checkDbConnection();
+// checkDbConnection();
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);

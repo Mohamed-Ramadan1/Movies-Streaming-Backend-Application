@@ -1,7 +1,7 @@
 // src/app.ts
 import express from "express";
 import { PORT } from "./config";
-// import { checkDbConnection } from "./config/database";
+import { checkDbConnection } from "./config/database";
 
 const app = express();
 

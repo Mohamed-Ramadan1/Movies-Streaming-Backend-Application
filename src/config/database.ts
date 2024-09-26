@@ -1,9 +1,13 @@
 // src/config/database.ts
 import { Pool } from "pg";
-import { DATABASE_URL } from "./index";
+import { user, password, host, port, database } from "./index";
 
 const pool = new Pool({
-  connectionString: DATABASE_URL,
+  user,
+  password,
+  host,
+  port,
+  database,
 });
 
 const checkDbConnection = async () => {

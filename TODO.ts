@@ -22,14 +22,7 @@ TODO: Analytics Feature
 
 
 
-
-
-
-
-
-
-
-
+TODO: Payment Feature
 
 
 */

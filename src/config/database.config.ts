@@ -10,7 +10,7 @@ const pool = new Pool({
   database,
 });
 
-const checkDbConnection = async () => {
+const connectDatabase = async () => {
   console.log("Connecting to DB with:", {
     user,
     host,
@@ -21,6 +21,7 @@ const checkDbConnection = async () => {
   try {
     const client = await pool.connect();
     console.log("Database connected successfully");
+
     client.release(); // Release the connection back to the pool
   } catch (error: any) {
     console.error("Database connection failed:", error.message);
@@ -28,4 +29,4 @@ const checkDbConnection = async () => {
   }
 };
 
-export { pool, checkDbConnection };
+export { pool, connectDatabase };
